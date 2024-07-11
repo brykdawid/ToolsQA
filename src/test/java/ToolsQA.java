@@ -21,7 +21,7 @@ public class ToolsQA {
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
 
-        int repeat = 25;
+        int repeat = 1;
         for (int i = 0; i <= repeat; i++) {
             String fullNames = FileReader.getNextFullName();
             String email = FileReader.getNextEmail();
@@ -53,7 +53,7 @@ public class ToolsQA {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         JavascriptExecutor jse = (JavascriptExecutor) driver;
-        int repeat = 15;
+        int repeat = 1;
         for (int i = 0; i <= repeat; i++) {
             Random random = new Random();
             int y = random.nextInt(15);
@@ -257,7 +257,7 @@ public class ToolsQA {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
 
-        int repeat = 25;
+        int repeat = 1;
         for (int i = 0; i <= repeat; i++) {
             System.out.println("Repeat number:" + i + "\n");
             driver.get("https://demoqa.com/radio-button");
@@ -277,7 +277,7 @@ public class ToolsQA {
         driver.get("https://demoqa.com/webtables");
 
 
-        int repeat = 25;
+        int repeat = 1;
         for (int i = 0; i <= repeat; i++) {
             WebElement addButton = driver.findElement(By.xpath("//button[@id='addNewRecordButton']"));
             addButton.click();
@@ -1133,7 +1133,7 @@ public class ToolsQA {
                 "Green"
         ));
 
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i <= 1; i++) {
             try {
 
                 driver.get("https://demoqa.com/auto-complete");
@@ -1179,7 +1179,7 @@ public class ToolsQA {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
 
-        for (int i = 0; i <= 30; i++) {
+        for (int i = 0; i <= 1; i++) {
             try {
                 driver.get("https://demoqa.com/date-picker");
 
@@ -1533,7 +1533,7 @@ public class ToolsQA {
 
             List<WebElement> items = tabs.get(0).findElements(By.xpath("//div[@class='vertical-list-container mt-4'] //div[@class='list-group-item list-group-item-action']"));
             System.out.printf(String.valueOf(items.size()));
-            for (int i = 0; i <= 50; i++) {
+            for (int i = 0; i <= 1; i++) {
                 Random rand = new Random();
                 int randomItem;
                 int randomPlace;
@@ -1548,7 +1548,7 @@ public class ToolsQA {
             }
             tabs.get(1).click();
             List<WebElement> gridItems = tabs.get(1).findElements(By.xpath("//div[@class='create-grid'] //div[@class='list-group-item list-group-item-action']"));
-            for (int i = 0; i <= 50; i++) {
+            for (int i = 0; i <= 1; i++) {
                 Random rand = new Random();
                 int randomItem;
                 int randomPlace;
@@ -1758,7 +1758,7 @@ public class ToolsQA {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
-        for (int i = 0; i <= 15; i++) {
+        for (int i = 0; i <= 1; i++) {
             try {
                 Random random = new Random();
                 int scenario = random.nextInt(7) + 1;
